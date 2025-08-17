@@ -46,9 +46,11 @@ export default function App() {
         // If it's a new week or no data exists, reset everything.
         setBodyParts([
           { id: 1, name: 'Chest', sets: 0 },
-          { id: 2, name: 'Back', sets: 0 },
-          { id: 3, name: 'Legs', sets: 0 },
-          { id: 4, name: 'Shoulders', sets: 0 },
+          { id: 2, name: 'Quads', sets: 0 },
+          { id: 3, name: 'Lats', sets: 0 },
+          { id: 4, name: 'Front delts', sets: 0 },
+          { id: 5, name: 'Side delts', sets: 0 },
+          { id: 6, name: 'Rear delts', sets: 0 },
         ]);
         localStorage.setItem('strengthTrackerWeekStart', currentWeekStart.toString());
       }
@@ -57,9 +59,11 @@ export default function App() {
       // Set to default state if localStorage data is corrupted
       setBodyParts([
         { id: 1, name: 'Chest', sets: 0 },
-        { id: 2, name: 'Back', sets: 0 },
-        { id: 3, name: 'Legs', sets: 0 },
-        { id: 4, name: 'Shoulders', sets: 0 },
+        { id: 2, name: 'Quads', sets: 0 },
+        { id: 3, name: 'Lats', sets: 0 },
+        { id: 4, name: 'Front delts', sets: 0 },
+        { id: 5, name: 'Side delts', sets: 0 },
+        { id: 6, name: 'Rear delts', sets: 0 },
       ]);
     }
   }, []);
